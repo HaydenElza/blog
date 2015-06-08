@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Connect To VNC Server Without Typing Password</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name=viewport content="width=750, initial-scale=0.5">
+	<link rel="shortcut icon" href="/assets/img/favicon.png">
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+</head>
+ 
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div id="header-bottom-left">
+				<div id="header-img">
+					<a href="/"><img src="/assets/img/favicon.png" alt="Myrkviðr" width="50" height="50"></a>
+				</div>
+				<ul class="tabmenu">
+					<li><a class="choice" href="/about.html">About Me</a></li>
+					<li><a class="choice" href="/skills.html">Skills</a></li>
+					<li><a class="choice" href="/portfolio.html">Portfolio</a></li>
+					<li><a class="choice" href="/contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div id="header-botom-right">
+			
+			</div>
+		</div>
+		<div class="side-left">
+		</div>
+		<div class="side-right">
+		</div>
+		<div class="content">
+			<div class="text">
+				<h1>Connect To VNC Server Without Typing Password</h1><br>
+				<h2>2015-04-18</h2><br><br>
+				
+				<p class="text">
+					Remoting into a server can be very useful, whether it be to work from home or simply to use a headless machine. In my case I am using TightVNC to connect to a Windows machine right next to my Arch Linux box because I need Windows now and then for certain tasks because I work in a primarily Windows office. I could run a VM on my linux box but that would put an extra load on my system. I could also dual boot for my Windows needs, but this is a big time sink. Ultimately I have chosen to run Windows on a separate machine to keep both environments running smoothly. Now this setup is not ideal because the Windows box is fairly weak, Intel Core2 6600 with 2GB ram, so when the system is under heavy load the VNC viewer tends to lag a bit.
+					<br><br>
+					To set up the VNC viewer to fit into my workflow I wanted a way to open it without having to open terminal to run the command every time, or at the very least have a shorter command to type. There are two ways to reach this solution: create a menu entry in Openbox and create a permanent bash alias. But first we must create a password file so that we can login without typing the password. To do this we need to use vncpasswd.
+					<br><br>
+					<b>Create passwd file:</b>
+					<br><br>
+					First, start vncpassword by running:
+					<br><br>
+					<span class="code">
+					$ vncpasswd<br>
+					Using password file /home/user/.vnc/passwd<br>
+					Password:<br>
+					Verify:<br>
+					Would you like to enter a view-only password (y/n)? n
+					</span>
+					<br><br>
+					The default behavior is to save the file to the <span class="code">.vnc/</span> folder unless the <span class="code">-t</span> option is used. <a href="http://www.tightvnc.com/vncpasswd.1.php">Click here to read the vncpasswd man pages to learn more.</a> Enter your password when prompted. If you would like to enter a view-only password respond accordingly for your specific setup. In my case I did not want to set up a view-only password.
+					<br><br>
+					Now that you have your passwd file you can use it to connect to your VNC server. In my case I renamed the passwd file to the hostname of my remote machine (margaery) so that I could setup a passwd file for each remote server I wanted to connect to. Here is the command I now use to connect to my remote VNC server:
+					<br><br>
+					<span class="code">
+					$ vncviewer -passwd ~/.vnc/margaery 192.168.1.100
+					</span>
+					<br><br>
+					Make sure to use the correct IP that corresponds to your machine. In this case I used a local IP because I do not intend to connect from outside the local network.
+					<br><br>
+					<b>Openbox menu entry:</b>
+					<br><br>
+					Now that we have the passwd file configured properly we need to create a menu entry in Openbox. Start by opening <span class="code">/home/user/.config/openbox/menu.xml</span> in a text editor.
+					<br><br>
+					Add a new app menu item before the root menu at the end. Mine looked something like this:
+					<br><br>
+					<span class="code">
+						&lt;menu id="apps-vnc-menu" label="VNC"&gt;<br>
+						  &nbsp;&nbsp;&nbsp;&nbsp;&lt;item label="Margaery"&gt;<br>
+						    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;action name="Execute"&gt;<br>
+						      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;command&gt;vncviewer -passwd ~/.vnc/margaery 192.168.1.100&lt;/command&gt;<br>
+						    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/action&gt;<br>
+						  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/item&gt;<br>
+						&lt;/menu&gt;<br>
+					</span>
+					<br><br>
+					We then need to add the new menu we just created to the applications portion of the  root menu:
+					<br><br>
+					<span class="code">
+						&lt;menu id="root-menu" label="Openbox 3"&gt;<br>
+						  &nbsp;&nbsp;&nbsp;&nbsp;&lt;menu id="apps-vnc-menu"/&gt;<br>
+						&lt;/menu&gt;<br>
+					</span>
+					<br><br>
+					I have many other entries in the menu but I omitted them for brevity. Save your changes and close the editor. Note that your changes will not take effect until you restart Openbox.
+					<br><br>
+					<b>Bash Alias:</b>
+					<br><br>
+					Another option is to set up an alias in your <span class="code">.bashrc</span>. To do this open <span class="code">~/.bashrc</span> in a text editor. Add a line to the bottom similar to the following:
+					<br><br>
+					<span class="code">
+					alias vncmargaery="vncviewer -passwd ~/.vnc/margaery 192.168.1.100"
+					</span>
+					<br><br>
+					Replace <span class="code">vncmargaery</span> with whatever you want the new alias to be, i.e., what you type into terminal to connect to your VNC server. Just be sure to not enter in a command that already exists. Next enter the command you used from before to connect to your VNC server. This means you will likely need to change the passwd file path and the IP address from the example above. Note that you will need to restart your terminal for the changes to take effect so that you can use the alias.
+					<br><br>
+					---
+					<br><br>
+					Well there you have it. We can now connect to a VNC server by either finding it in our openbox menu or by typing the alias into our terminal. I hope this was helpful, and if it was feel free to let me know on twitter or facebook so I know to keep writing this kind of stuff.
+					<br><br>
+					Vi ses!
+				</p>
+
+			</div>
+			<br><br>
+		</div>
+		<br>
+		<div id="footer" class="text">
+			<div id="social">
+				<ul class="fa icons-social">
+					<li><a href="https://twitter.com/haydenelza" class="fa-twitter"></a></li>
+					<li><a href="https://www.facebook.com/hayden.elza" class="fa-facebook"></a></li>
+					<!--<li><a href="https://linkedin.com/in/helgesverre/" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>-->
+					<li><a href="https://github.com/HaydenElza/" class="fa-github"></a></li>
+					<li><a href="https://plus.google.com/u/0/102730307215402880278" class="fa-google-plus"></a></li>
+				</ul>
+			</div>
+			<p>2015 © Hayden Elza. All rights reserved.</p>
+			<br>
+		</div>
+	</div>
+</body>
+</html>

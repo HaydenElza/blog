@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>qgis: error while loading shared libraries: libqwt.so.6: cannot open shared object file: No such file or directory</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name=viewport content="width=750, initial-scale=0.5">
+	<link rel="shortcut icon" href="/assets/img/favicon.png">
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+</head>
+ 
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div id="header-bottom-left">
+				<div id="header-img">
+					<a href="/"><img src="/assets/img/favicon.png" alt="Myrkviðr" width="50" height="50"></a>
+				</div>
+				<ul class="tabmenu">
+					<li><a class="choice" href="/about.html">About Me</a></li>
+					<li><a class="choice" href="/skills.html">Skills</a></li>
+					<li><a class="choice" href="/portfolio.html">Portfolio</a></li>
+					<li><a class="choice" href="/contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div id="header-botom-right">
+			
+			</div>
+		</div>
+		<div class="side-left">
+		</div>
+		<div class="side-right">
+		</div>
+		<div class="content">
+			<div class="text">
+				<h1>qgis: error while loading shared libraries: libqwt.so.6: cannot open shared object file: No such file or directory</h1><br>
+				<h2>2015-04-15</h2><br><br>
+				
+				<p class="text">
+					Today when I went to start up QGIS on my Arch Linux box I noticed it failed. When I went to start it in terminal I got the following error:
+					<br><br>
+					<span class="code">qgis: error while loading shared libraries: libqwt.so.6: cannot open shared object file: No such file or directory</span>
+					<br><br>
+					This is because the qwt libraries are in in /usr/lib/qwt and QGIS is looking for them in /usr/lib. To solve this we can create a symbolic link in /usr/lib to link to the correct file. For me this was:
+					<br><br>
+					<span class="code"># ln -s /usr/lib/qwt/libqwt.so.6.1.2 /usr/lib/libqwt.so.6</span>
+					<br><br>
+					If you are like me, when you try to start QGIS it will fail once more. This time the error is:
+					<br><br>
+					<span class="code">qgis: error while loading shared libraries: libproj.so.0: cannot open shared object file: No such file or directory</span>
+					<br><br>
+					Similar to before, we can solve this by creating a symbolic link to the file QGIS is looking for:
+					<br><br>
+					<span class="code"># ln -s /usr/lib/libproj.so.9.0.0 /usr/lib/libproj.so.0</span>
+					<br><br>
+					After these fixes QGIS started without error.
+					<br><br>
+					---
+					<br><br>
+					Thanks for reading! If this helped you, feel free to let me know on facebook or twitter.
+				</p>
+
+			</div>
+			<br><br>
+		</div>
+		<br>
+		<div id="footer" class="text">
+			<div id="social">
+				<ul class="fa icons-social">
+					<li><a href="https://twitter.com/haydenelza" class="fa-twitter"></a></li>
+					<li><a href="https://www.facebook.com/hayden.elza" class="fa-facebook"></a></li>
+					<!--<li><a href="https://linkedin.com/in/helgesverre/" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>-->
+					<li><a href="https://github.com/HaydenElza/" class="fa-github"></a></li>
+					<li><a href="https://plus.google.com/u/0/102730307215402880278" class="fa-google-plus"></a></li>
+				</ul>
+			</div>
+			<p>2015 © Hayden Elza. All rights reserved.</p>
+			<br>
+		</div>
+	</div>
+</body>
+</html>
