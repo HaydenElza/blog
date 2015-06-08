@@ -12,5 +12,5 @@ twitter_username: haydenelza
 github_username:  haydenelza
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 permalink: /:year/:month/:title
