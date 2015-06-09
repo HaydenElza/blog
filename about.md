@@ -4,8 +4,12 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+My name is Hayden Elza and I am a Forester and GIS Specialist. 
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+My interests are in how GIS, or technology in general, can be used in the field of forestry.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+In my free time I enjoy tinkering and hacking. My habit is to learn by doing. For me learning in context is important skill for developing a long lasting, useful knowledge base.
+
+In the summer time I put away my computers and venture outdoors. I currently live between two big lakes, the larger of which provides me with endless hours of sailing. When I can get out of the city, I enjoy hunting, fishing, hiking, backpacking, canoeing, kayaking, and biking.
+
+Want to hire me? Check out my pesonal site at [elza.me](http://www.elza.me)
