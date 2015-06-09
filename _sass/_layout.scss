@@ -16,12 +16,21 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    @include media-query($on-palm) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 
     &,
     &:visited {
         color: $grey-color-dark;
     }
 }
+
+
 
 .site-nav {
     float: right;
