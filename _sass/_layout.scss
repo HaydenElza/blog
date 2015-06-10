@@ -34,7 +34,7 @@
 
 .site-nav {
     float: right;
-    line-height: 56px;
+    line-height: 115px;
 
     .menu-icon {
         display: none;
@@ -43,6 +43,7 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
+        vertical-align: bottom;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
