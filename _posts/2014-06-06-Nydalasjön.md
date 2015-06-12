@@ -12,7 +12,7 @@ tag:
 - bog
 ---
 
-[![](http://i.imgur.com/aJs4HEe.jpg)](http://i.imgur.com/aJs4HEe.jpg)
+[![](http://i.imgur.com/aJs4HEeh.jpg)](http://i.imgur.com/aJs4HEe.jpg)
 
 June 6 is [National Day](http://www.sweden.se/eng/Home/Lifestyle/Traditions/The-National-Day/) in Sweden. As such Swedes take the day off and spend their time relaxing with friends and family, many making their way outdoors to explore all that Sweden has to offer. I too followed suit and decided to do some exploring of my own. Instead of going west into the heart of Umeå I decided to go east to [Nydalasjön](https://maps.google.com/maps?q=ume%C3%A5&ie=UTF-8&hq=&hnear=0x467c4e1b68add7f9:0x4034506de8c8560,Ume%C3%A5,+Sweden&ei=tR2yUcb-Canf4QTNt4C4CA&ved=0CJoBELYD), or Nydala Lake.  
  
