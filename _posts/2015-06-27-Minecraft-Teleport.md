@@ -79,6 +79,13 @@ My layout for the clock is pictured below. Notice that all of the command blocks
 
 [![](http://i.imgur.com/diMrkWfh.png)](http://i.imgur.com/diMrkWf.png)
 
+### Stop commands from displaying in console
+
+Enabling the trigger for everyone on a clock will spam chat for ops. We can avoid this by using the following command to suppress command block messages in chat:
+
+~~~
+/gamerule commandBlockOutput false
+~~~
 
 ---
 <br>
