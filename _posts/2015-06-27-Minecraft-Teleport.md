@@ -12,6 +12,8 @@ tag:
 - raw json
 ---
 
+[![](http://i.imgur.com/iftTEYeh.png)](http://i.imgur.com/iftTEYe.png)
+
 ### Setup Objective
 
 Start by adding a new objective by copying and pasting the following code into chat:
