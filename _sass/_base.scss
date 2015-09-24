@@ -202,3 +202,61 @@ pre {
         }
     }
 }
+
+/* Page-link underline animation */
+a.page-link{
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+a.page-link:hover{
+    color: #000;
+}
+a.page-link:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+a.page-link:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/* Logo hover animation */
+.site-title img{
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+}
+.site-title img:hover{
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+.ring{
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: transparent;
+    border: 3px black solid;
+    opacity: 0;
+}
+.ring:focus{
+    -webkit-animation-name: ripple;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-direction: normal; 
+}
+@-webkit-keyframes ripple {
+    0% {-webkit-transform: scale(1); opacity: 1;}
+    100% {-webkit-transform: scale(1.4); opacity: 0;}
+}
