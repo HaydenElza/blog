@@ -11,7 +11,7 @@ tag:
 ---
 
 	 	 	
-This is in response to a [post](https://www.reddit.com/r/gis/comments/3nbxrk/what_is_better_a_map_or_a_picture_digital/?ref=share&ref_source=link) by [pjhooker](https://www.reddit.com/user/pjhooker) on reddit. S/he wrote an interesting article advocating the use of maps by your average everyday blogger, not just the tech savvy or map-centric ones. I think this a cool idea, but the method they suggest may still be too technical for some. Enter in my alternative. Embedded Google Maps.
+This is in response to a [post](https://www.reddit.com/r/gis/comments/3nbxrk/what_is_better_a_map_or_a_picture_digital/?ref=share&ref_source=link) by [pjhooker](https://www.reddit.com/user/pjhooker) on reddit. S/he wrote an interesting article advocating the use of maps by your average everyday blogger, not just the tech savvy or map-centric ones. I think this a cool idea, but the method they suggest may still be too technical for some. Enter in my alternative. Embedded Google Maps. No, they are not as fancy with features like markers and polygons, but they are still very useful. Besides if you want custom features, it's not all that difficult to use [google my maps](https://www.google.com/mymaps) and use the same embedding technique shown here.
 
 ### What it looks like:
 
