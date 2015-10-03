@@ -23,19 +23,19 @@ This is in response to a [post](https://www.reddit.com/r/gis/comments/3nbxrk/wha
 
 First open [google maps](https://www.google.com/maps/) and navigate to the area of interest. For this demonstration I choose Milan, Italy. Then click on the menu icon in the top left.
 
-![[](http://imgur.com/TTQotMp.png)](http://imgur.com/TTQotMp.png)
+[![](http://imgur.com/TTQotMp.png)](http://imgur.com/TTQotMp.png)
 
 Next click on “Share or embed map”:
 
-![[](http://imgur.com/yO041ut.png)](http://imgur.com/yO041ut.png)
+[![](http://imgur.com/yO041ut.png)](http://imgur.com/yO041ut.png)
 
 The click on the embed map tab:
 
-![[](http://imgur.com/cvSXlXN.png)](http://imgur.com/cvSXlXN.png)
+[![](http://imgur.com/cvSXlXN.png)](http://imgur.com/cvSXlXN.png)
 
 Lastly copy the iframe code snippet and paste into a blog post, webpage, or wherever you want to share the map.
 
-![[](http://imgur.com/VTZPqXw.png)](http://imgur.com/VTZPqXw.png)
+[![](http://imgur.com/VTZPqXw.png)](http://imgur.com/VTZPqXw.png)
 
 ---
 <br>
