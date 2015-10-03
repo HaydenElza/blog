@@ -29,7 +29,7 @@ Next click on “Share or embed map”:
 
 [![](http://imgur.com/yO041ut.png)](http://imgur.com/yO041ut.png)
 
-The click on the embed map tab:
+Then click on the embed map tab:
 
 [![](http://imgur.com/cvSXlXN.png)](http://imgur.com/cvSXlXN.png)
 
