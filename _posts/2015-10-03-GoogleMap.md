@@ -21,7 +21,7 @@ This is in response to a [post](https://www.reddit.com/r/gis/comments/3nbxrk/wha
 
 ### How to do it:
 
-First open [google maps](https://www.google.com/maps/) and navigate to the area of interest. For this demonstration I choose Milan, Italy. Then click on the menu icon in the top left.
+First open [google maps](https://www.google.com/maps/) and navigate to the area of interest. For this demonstration I chose Milan, Italy. Then click on the menu icon in the top left.
 
 [![](http://imgur.com/TTQotMp.png)](http://imgur.com/TTQotMp.png)
 
