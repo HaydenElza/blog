@@ -18,6 +18,7 @@ This is in response to a [post](https://www.reddit.com/r/gis/comments/3nbxrk/wha
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179094.4607670466!2d9.17773225!3d45.46273385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1493f1275e7%3A0x3cffcd13c6740e8d!2sMilan%2C+Italy!5e0!3m2!1sen!2sus!4v1443880687314" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 <br>
+
 ### How to do it:
 
 First open [google maps](https://www.google.com/maps/) and navigate to the area of interest. For this demonstration I choose Milan, Italy. Then click on the menu icon in the top left.
