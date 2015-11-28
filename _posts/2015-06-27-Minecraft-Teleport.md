@@ -79,7 +79,7 @@ The first command enables players to used the trigger. This needs to constantly 
 
 My layout for the clock is pictured below. Notice that all of the command blocks are on the same side of the clock. This is required for reliable use.
 
-[![](http://i.imgur.com/diMrkWfh.png)](http://i.imgur.com/diMrkWf.png)
+[![](http://imgur.com/BnqAi2Wh.png)](http://imgur.com/BnqAi2W.png)
 
 ### Stop commands from displaying in console
 
