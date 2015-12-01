@@ -2,7 +2,7 @@
 date: 2015-11-30
 layout: post
 slug: 
-title: "ArcGIS Model Builder - Select by Location: Using an Ouput as an Input "
+title: "ArcGIS Model Builder - Select by Location: Using an Output as an Input "
 categories:
 - GIS
 tag:
