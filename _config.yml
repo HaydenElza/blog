@@ -11,4 +11,8 @@ url: "localhost:4000"
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
 permalink: /:year/:month/:title/
