@@ -1,5 +1,5 @@
 # Site settings
-title: Myrkviðr
+title: Hayden's Blog
 email: hayden.elza@gmail.com
 description: >
   Hey there reader! My name is Hayden Elza and this is my blog spanning
@@ -8,8 +8,6 @@ description: >
   as such content is likely as erratic as my mind.
 baseurl: "/blog" 
 url: "localhost:4000" 
-twitter_username: haydenelza
-github_username:  haydenelza
 
 # Build settings
 markdown: kramdown
