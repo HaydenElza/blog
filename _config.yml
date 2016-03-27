@@ -11,4 +11,4 @@ url: "localhost:4000"
 
 # Build settings
 markdown: kramdown
-permalink: /:year/:month/:title
+permalink: /:year/:month/:title/
