@@ -69,7 +69,7 @@ Each command below needs to placed on the same redstone clock to constantly run.
 /tp @p[score_teleport_min=1,score_teleport=1] 391 56 -555
 ~~~
 
-The first command enables players to used the trigger. This needs to constantly run because a trigger needs to be re-enabled for a player after each use. The seccond comand tests for a "teleport" score greater than 0 and will reset a players "teleport" score back to zero. The last command is what ever command you want to run when the trigger is set to 1. Below are examples of commands for a "teleport" trigger set to 2 and 3.
+The first command enables players to use the trigger. This needs to constantly run because a trigger needs to be re-enabled for a player after each use. The seccond comand tests for a "teleport" score greater than 0 and will reset a players "teleport" score back to zero. The last command is what ever command you want to run when the trigger is set to 1. Below are examples of commands for a "teleport" trigger set to 2 and 3.
 
 ~~~
 /tp @p[score_teleport_min=2,score_teleport=2] 321 12 -325
