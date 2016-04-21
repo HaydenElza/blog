@@ -1,7 +1,7 @@
 ---
 date: 2016-04-20
 layout: post
-title: "Arch Linux: Find Space by Cleaning Filesystem"
+title: "Arch Linux: Find Disk Space by Cleaning Filesystem"
 categories:
 - linux
 tag:
@@ -29,7 +29,7 @@ tmpfs           2.8G  8.0K  2.8G   1% /tmp
 /dev/sda4       421G  346G   54G  87% /home
 ~~~
 
-Oh. My root is full, that'll do it. Better clean some stuff up.
+Oh. My root is full, that'll do it. Better do some tidying to free up disk space.
 
 
 
@@ -47,7 +47,7 @@ This removes all packages which are no longer used as a dependency as well as th
 ### Cleaning the package cache
 
 ~~~
-pacman -Sc
+# pacman -Sc
 ~~~
 
 Once in a while you will need to run this to clean out old or uninstalled packages that where downloaded by pacman during installation. Pacman doesn't clean this automatically so it can grow indefinitely, which in my case is what took up the majority of the space.
