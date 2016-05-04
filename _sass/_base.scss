@@ -233,6 +233,14 @@ a.page-link:hover:before{
     transform: scaleX(1);
 }
 
+/* Links */
+a {
+    color: #FF6D6D;
+}
+a:visited {
+    color: #E05A5A;
+}
+
 /* Logo hover animation */
 .site-title img{
   -webkit-transition: -webkit-transform .2s ease-in-out;
