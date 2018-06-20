@@ -12,7 +12,7 @@ tag:
 - raw json
 ---
 
-[![](http://i.imgur.com/iftTEYeh.png)](http://i.imgur.com/iftTEYe.png)
+[![](https://i.imgur.com/iftTEYeh.png)](https://i.imgur.com/iftTEYe.png)
 
 ### Setup Objective
 
@@ -79,7 +79,7 @@ The first command enables players to use the trigger. This needs to constantly r
 
 My layout for the clock is pictured below. Notice that all of the command blocks are on the same side of the clock. This is required for reliable use.
 
-[![](http://imgur.com/BnqAi2Wh.png)](http://imgur.com/BnqAi2W.png)
+[![](https://imgur.com/BnqAi2Wh.png)](https://imgur.com/BnqAi2W.png)
 
 ### Stop commands from displaying in console
 
