@@ -11,7 +11,7 @@ tag:
 The following instructions describe how to connect to the Virtual Private Network for Russell Labs (University of Wisconsin - Madison). This will allow you to connect to a desktop within the building when remote desktop is enable and will also allow access to Russell Labs fileservers and license servers.
 
 ### Install VPN Client
-Before connecting to resources in Russell Labs, you need to install and activate the AnyConnect VPN client. Find instructions [here](https://kb.wisc.edu/helpdesk/search.php?q=install+WiscVPN&cat=0).
+Before connecting to resources in Russell Labs, you need to install and activate the AnyConnect VPN client. Find instructions [here](https://kb.wisc.edu/helpdesk/27492).
 
 ### Connect to Server
 
