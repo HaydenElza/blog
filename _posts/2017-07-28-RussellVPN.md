@@ -8,6 +8,14 @@ tag:
 - how to
 ---
 
+## Update (Improved Solution)
+
+I have posted an updated how to for Global Protect: [elza.me/blog/2020/03/RussellVPN-GP/](https://elza.me/blog/2020/03/RussellVPN-GP/)
+
+---
+
+## Original Post
+
 The following instructions describe how to connect to the Virtual Private Network for Russell Labs (University of Wisconsin - Madison). This will allow you to connect to a desktop within the building when remote desktop is enable and will also allow access to Russell Labs fileservers and license servers.
 
 ### Install VPN Client
