@@ -7,7 +7,7 @@ description: >
   backpacking. This media serves sort of as a constant stream of consciousness,
   as such content is likely as erratic as my mind.
 baseurl: "/blog" 
-url: "localhost:4000" 
+url: "elza.me" 
 
 # Build settings
 markdown: kramdown
