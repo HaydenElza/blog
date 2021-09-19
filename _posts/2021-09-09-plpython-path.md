@@ -24,7 +24,7 @@ AS $$
 $$ LANGUAGE plpython3u;
 ~~~
 
-Now you can the paths by running a select query with the function:
+Now you can list the paths by running a select query with the function:
 
 ~~~sql
 SELECT UNNEST(python_path());
