@@ -1,11 +1,8 @@
 # Site settings
-title: Hayden's Blog
+title: Hayden Elza
 email: hayden.elza@gmail.com
 description: >
-  Hey there reader! My name is Hayden Elza and this is my blog spanning
-  a wide range of interests from programming and linux to sailing and
-  backpacking. This media serves sort of as a constant stream of consciousness,
-  as such content is likely as erratic as my mind.
+  Hayden Elza's Blog
 baseurl: "/blog" 
 url: "elza.me" 
 

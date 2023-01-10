@@ -108,26 +108,30 @@
 
 .footer-heading {
     font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: 0;
+    padding-bottom: calc($spacing-unit / 4);
+    border-bottom: solid #444 1.5px;
 }
 
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
+.social-icons {
+    margin-top: calc($spacing-unit / 4);
 }
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
+    color: $grey-color-dark;
+    margin-left: calc($spacing-unit / 2 * -1);
     @extend %clearfix;
 }
 
 .footer-col {
     float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+    margin-bottom: calc($spacing-unit / 2);
+    padding-left: calc($spacing-unit / 2);
+}
+
+.footer-col>h4 {
+    margin-top: calc($spacing-unit / 4);
 }
 
 .footer-col-1 {
