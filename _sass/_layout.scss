@@ -109,12 +109,12 @@
 .footer-heading {
     font-size: 18px;
     margin-bottom: 0;
-    padding-bottom: calc($spacing-unit / 4);
+    padding-bottom: $spacing-unit / 4;
     border-bottom: solid #444 1.5px;
 }
 
 .social-icons {
-    margin-top: calc($spacing-unit / 4);
+    margin-top: $spacing-unit / 4;
 }
 
 .footer-col-wrapper {
@@ -131,7 +131,7 @@
 }
 
 .footer-col>h4 {
-    margin-top: calc($spacing-unit / 4);
+    margin-top: $spacing-unit / 4;
 }
 
 .footer-col-1 {
