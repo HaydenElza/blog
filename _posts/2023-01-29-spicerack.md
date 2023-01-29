@@ -67,7 +67,7 @@ Because each shelf is angled, the clearance can be tighter than the very top she
 
 The last piece of this project is the frame made from 1/2in plywood. Technically I modeled frame (see the OnShape or Printables links), so you could use a CNC to cut out the pieces. I suppose technically you could print the frame from PLA too if you have a big enough print bed.
 
-Personally, I just used conventional power tools (table saw and drill press). Below are the dimensions for the wood frame. Print out [this PDF](/blog/assets/pdf/spiceraack_woodframe.pdf) to take to the workshop.
+Personally, I just used conventional power tools (table saw and drill press). Below are the dimensions for the wood frame. Print out [this PDF](/blog/assets/pdf/spicerack_woodframe.pdf) to take to the workshop.
 
 ![Dimensions for wooden frame.](/blog/assets/img/posts/2023-01-29_7.png){:style="max-height: 500px;margin-left: auto;margin-right: auto;display: block;"}
 
